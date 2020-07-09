@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d6d04e42-8adf-41d8-97b5-7e88ca0e6d91" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1eNJfliI7mzVrTlA4YWw4GUHR1O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/src/main/webapp" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jianzhong.Rong\IdeaProjects\web-security\web\src\main\webapp" />
+      <recent name="C:\Users\jianzhong.Rong\IdeaProjects\web-security" />
+      <recent name="C:\Users\jianzhong.Rong\IdeaProjects\web-security\web\src\main\java" />
+      <recent name="C:\Users\jianzhong.Rong\IdeaProjects\web-security\resources" />
+      <recent name="C:\Users\jianzhong.Rong\IdeaProjects\web-security\web\src\main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jianzhong.Rong\IdeaProjects\web-security\web\src\main\resources" />
+      <recent name="C:\Users\jianzhong.Rong\IdeaProjects\web-security\web\src\main\resources\static" />
+      <recent name="C:\Users\jianzhong.Rong\IdeaProjects\web-security\WebSecurityConfig\src\main\webapp\jsp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.WebApplication">
+    <configuration name="WebApp (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview.spring.security.main.WebApp" />
+      <module name="Web-UI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interview.spring.security.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview.spring.websecurity.main.WebApp" />
+      <module name="WebSecurityConfig" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interview.spring.websecurity.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview.spring.websecurity.WebApplication" />
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interview.spring.websecurity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WebApplication" />
+        <item itemvalue="Application.WebApp (1)" />
+        <item itemvalue="Application.WebApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6d04e42-8adf-41d8-97b5-7e88ca0e6d91" name="Default Changelist" comment="" />
+      <created>1594156222560</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594156222560</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1594315015054">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594315015054" />
+    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1594156641439">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1594156641439" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1594259612852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594259612852" />
+    <state width="1493" height="278" key="GridCell.Tab.0.bottom" timestamp="1594315266208">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="278" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594315266208" />
+    <state width="1493" height="278" key="GridCell.Tab.0.center" timestamp="1594315266207">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="278" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594315266207" />
+    <state width="1493" height="278" key="GridCell.Tab.0.left" timestamp="1594315266207">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="278" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594315266207" />
+    <state width="1493" height="278" key="GridCell.Tab.0.right" timestamp="1594315266208">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="278" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594315266208" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1594314752355">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1594314752355" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1594260995042">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594260995042" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1594172251328">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1594172251328" />
+    <state x="418" y="15" key="new project wizard" timestamp="1594314382300">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="418" y="15" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1594314382300" />
+  </component>
+</project>
