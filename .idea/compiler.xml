@@ -6,12 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Repos" />
+        <module name="config-server" />
         <module name="Model" />
         <module name="web" />
-        <module name="Repos" />
+        <module name="client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="client" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-server" target="1.8" />
       <module name="Model" target="1.8" />
       <module name="Models" target="1.8" />
       <module name="Repos" target="1.8" />
@@ -28,6 +33,9 @@
       <module name="Repos" options="-parameters" />
       <module name="Web-UI" options="-parameters" />
       <module name="WebSecurityConfig" options="-parameters" />
+      <module name="client" options="-parameters" />
+      <module name="config-client" options="-parameters" />
+      <module name="config-server" options="-parameters" />
       <module name="web" options="-parameters" />
       <module name="web-security" options="-parameters" />
     </option>
