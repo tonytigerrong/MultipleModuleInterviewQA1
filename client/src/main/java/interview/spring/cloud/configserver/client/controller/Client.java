@@ -1,12 +1,8 @@
-package interview.spring.cloud.configserver;
+package interview.spring.cloud.configserver.client.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
@@ -17,17 +13,18 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
-@SpringBootApplication
-@EnableAutoConfiguration
-public class ClientApplication {
+@RefreshScope
+@RestController
+public class Client {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ClientApplication.class, args);
-	}
+    @Autowired
+    @Lazy
+    RestTemplate restTemplate;
 
-	@Bean
-	public RestTemplate restTemplate(){
-		return new RestTemplate();
-	}
-
+    @Value("${websecurity.web.hellocontroller.cloudConfigTest}")
+    String url;
+    @GetMapping("/client")
+    public List clientTest(){
+        return restTemplate.getForObject(url,List.class);
+    }
 }

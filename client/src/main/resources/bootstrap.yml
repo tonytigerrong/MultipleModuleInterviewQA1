@@ -3,6 +3,4 @@ spring:
     name: client
   cloud:
     config:
-      label: master
-      profile: dev
       uri: http://localhost:8081
