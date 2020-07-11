@@ -12,4 +12,7 @@
     <artifactId>Model</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+
+    </dependencies>
 </project>

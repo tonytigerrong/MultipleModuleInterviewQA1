@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: PAYMENT-CONTROLLER
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://CA-LDT65QN2.groupinfra.com:8761/eureka
+  instance:
+    hostname: CA-LDT65QN2.groupinfra.com
