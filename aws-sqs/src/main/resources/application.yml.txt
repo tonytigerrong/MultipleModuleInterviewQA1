@@ -1,0 +1,12 @@
+server:
+  port: 8099
+cloud:
+  aws:
+    region:
+      static: us-east-2
+      auto: false
+    credentials:
+      accessKey: AKIA5PZ26MVXE67AKLNY
+      secretKey: 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
+    end-point:
+      uri: https://sqs.us-east-2.amazonaws.com/927299691886/demo-standard-sqs
