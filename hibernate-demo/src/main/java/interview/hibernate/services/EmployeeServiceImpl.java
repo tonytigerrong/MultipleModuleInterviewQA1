@@ -36,4 +36,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     public List<Employee> getLastEmployee(){
         return employeeDao.getLastEmployee();
     }
+
+    @Override
+    public List<Employee> getFirstEmployee() {
+        return employeeDao.getFirstEmployee();
+    }
 }

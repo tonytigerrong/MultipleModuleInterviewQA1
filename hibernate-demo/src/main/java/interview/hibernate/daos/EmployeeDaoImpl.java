@@ -48,12 +48,19 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
     public List<Employee> getLastEmployee(){
         String sql = "select * from (select * from tbl_employee order by id desc) as t limit 1";
-        SQLQuery query = getSession().createSQLQuery(sql);
+        SQLQuery query = getSession().createSQLQuery(sql); // using native sql
         query.addEntity(Employee.class);
         List<Employee> results = query.list();
         return results;
     }
 
+    public List<Employee> getFirstEmployee(){
+        String hql = "from Employee where id = :id";
+        Query query = getSession().createQuery(hql); // using HQL
+        List<Employee> result = query.setParameter("id",1).getResultList();
+        return result;
+
+    }
     public Session getSession(){
         return entityManager.unwrap(Session.class);
     }

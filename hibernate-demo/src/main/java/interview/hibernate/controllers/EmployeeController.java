@@ -51,6 +51,14 @@ public class EmployeeController {
         List<Employee> employees = employeeService.getLastEmployee();
         return new ResponseEntity(employees,HttpStatus.OK);
     }
+
+    @GetMapping(value="/getFirstEmployee")
+    @Procedure("application/json")
+    public ResponseEntity getFirstEmployee(){
+        List<Employee> employees = employeeService.getFirstEmployee();
+        return new ResponseEntity(employees,HttpStatus.OK);
+    }
+
     @PostMapping(value="/addEmployee")
     public Employee addEmployee(@RequestBody Employee employee){
         employeeService.save(employee);
