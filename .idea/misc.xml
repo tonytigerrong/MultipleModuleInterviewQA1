@@ -8,6 +8,12 @@
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/rest-client/pom.xml" />
         <option value="$PROJECT_DIR$/client/pom.xml" />
+        <option value="$PROJECT_DIR$/order-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/payment-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/aws-sqs/pom.xml" />
+        <option value="$PROJECT_DIR$/hibernate-demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -31,4 +31,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     public void delete(int id) {
         employeeDao.delete(id);
     }
+
+    @Override
+    public List<Employee> getLastEmployee(){
+        return employeeDao.getLastEmployee();
+    }
 }

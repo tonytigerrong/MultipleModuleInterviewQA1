@@ -4,8 +4,15 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Model/Model.iml" filepath="$PROJECT_DIR$/Model/Model.iml" />
       <module fileurl="file://$PROJECT_DIR$/Repos/Repos.iml" filepath="$PROJECT_DIR$/Repos/Repos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aws-sqs/aws-sqs.iml" filepath="$PROJECT_DIR$/aws-sqs/aws-sqs.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hibernate-demo/hibernate-demo.iml" filepath="$PROJECT_DIR$/hibernate-demo/hibernate-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-controller/order-controller.iml" filepath="$PROJECT_DIR$/order-controller/order-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-controller/payment-controller.iml" filepath="$PROJECT_DIR$/payment-controller/payment-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-controller/services.iml" filepath="$PROJECT_DIR$/payment-controller/services.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-security.iml" filepath="$PROJECT_DIR$/web-security.iml" />
     </modules>

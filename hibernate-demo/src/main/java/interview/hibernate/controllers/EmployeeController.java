@@ -39,13 +39,17 @@ public class EmployeeController {
         Employee employee = employeeService.get(id);
         if(employee == null) {
             throw new NoEmployeeException("Employee not Found!",Integer.toString(id));
-//            NoEntity noEntity = new NoEntity(String.valueOf(id),"Employee","Not Found");
-//            responseEntity = new ResponseEntity(noEntity,HttpStatus.NO_CONTENT);
-//            responseEntity = ResponseEntity.notFound().build();
         }else{
             responseEntity = new ResponseEntity(employee,HttpStatus.OK);
         }
         return responseEntity;
+    }
+
+    @GetMapping(value="/getLastEmployee")
+    @Procedure("application/json")
+    public ResponseEntity getLastEmployee(){
+        List<Employee> employees = employeeService.getLastEmployee();
+        return new ResponseEntity(employees,HttpStatus.OK);
     }
     @PostMapping(value="/addEmployee")
     public Employee addEmployee(@RequestBody Employee employee){
@@ -68,6 +72,7 @@ public class EmployeeController {
     @ResponseBody
     public NoEntity defaultException(NoEmployeeException e, WebRequest request){
         String[] attributes = request.getAttributeNames(WebRequest.SCOPE_REQUEST);
+        // get path variable of request via WebRequest
         HashMap pathAttributes = (HashMap) request.getAttribute("org.springframework.web.servlet.View.pathVariables",WebRequest.SCOPE_REQUEST);
         Integer id = (Integer)pathAttributes.get("id");
         String idString = String.valueOf(id);

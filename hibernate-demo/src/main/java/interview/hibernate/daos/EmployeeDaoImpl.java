@@ -2,6 +2,7 @@ package interview.hibernate.daos;
 
 import interview.hibernate.models.Employee;
 import org.hibernate.Criteria;
+import org.hibernate.SQLQuery;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,5 +44,17 @@ public class EmployeeDaoImpl implements EmployeeDao {
         Session session = entityManager.unwrap(Session.class);
         Employee employee = session.load(Employee.class,id);
         session.delete(employee);
+    }
+
+    public List<Employee> getLastEmployee(){
+        String sql = "select * from (select * from tbl_employee order by id desc) as t limit 1";
+        SQLQuery query = getSession().createSQLQuery(sql);
+        query.addEntity(Employee.class);
+        List<Employee> results = query.list();
+        return results;
+    }
+
+    public Session getSession(){
+        return entityManager.unwrap(Session.class);
     }
 }
