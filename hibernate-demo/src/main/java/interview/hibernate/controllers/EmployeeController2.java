@@ -3,6 +3,7 @@ package interview.hibernate.controllers;
 import interview.hibernate.daos.EmployeeDao;
 import interview.hibernate.exception.NoEmployeeException;
 import interview.hibernate.models.Employee;
+import org.hibernate.LockMode;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -101,6 +102,23 @@ public class EmployeeController2 {
                 Employee e2 = session2.get(Employee.class,1);
                 session2.update(e1);
             session2.getTransaction().commit();
+
+        }else if(method.equals("lock")){
+            SessionFactory sessionFactory = session.getSessionFactory();
+            Session session1 = sessionFactory.openSession();
+            Employee e1 = session1.get(Employee.class,1);
+            session1.beginTransaction();
+            /**
+             * LockMode:
+             * 1. Write or UpGrade or Pessimistic_Write : for updated or inserted, lock immediately
+             * 2. Read             : for a shared lock
+             * 3. Pessimistic_Force_Increment: increment version immediately
+             * 
+             */
+            session1.lock(e1, LockMode.UPGRADE); // lock the record of e1, others can't update the record in the meantime
+            e1.setName("LockMode.UpGrade");
+            session1.merge(e1);
+            session1.getTransaction().commit();
 
         }
 
