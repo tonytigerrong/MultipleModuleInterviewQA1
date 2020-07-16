@@ -66,7 +66,14 @@ public class EmployeeController {
     }
     @PutMapping(value="/updateEmployee")
     public Employee updateEmployee(@RequestBody Employee employee){
-        employeeService.save(employee);
+        Employee _em = employeeService.get(employee.getId());
+        if(_em != null){
+            employee.setVersion(_em.getVersion());
+            employeeService.save(employee);
+        }else{
+            employeeService.save(employee);
+        }
+
         return employee;
     }
     @DeleteMapping(value="/deleteEmployee")

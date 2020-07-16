@@ -4,12 +4,13 @@ import interview.hibernate.models.Employee;
 import org.hibernate.Criteria;
 import org.hibernate.SQLQuery;
 import org.hibernate.Session;
-import org.hibernate.query.Query;
+//import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaDelete;
 import javax.transaction.Transactional;
 import java.util.List;
@@ -21,8 +22,11 @@ public class EmployeeDaoImpl implements EmployeeDao {
     @Transactional
     @Override
     public List<Employee> get() {
-        Session session = entityManager.unwrap(Session.class);
-        Query query = session.createQuery("from Employee", Employee.class);
+//      Session session = entityManager.unwrap(Session.class);
+//      entityManager.getTransaction().begin();
+        Query query = entityManager.createQuery("from Employee");
+//      entityManager.getTransaction().commit();
+//      Query query = session.createQuery("from Employee", Employee.class);
         List<Employee> list =  query.getResultList();
         return list;
     }
@@ -35,8 +39,9 @@ public class EmployeeDaoImpl implements EmployeeDao {
     @Transactional
     @Override
     public void save(Employee employee) {
-        Session session = entityManager.unwrap(Session.class);
-        session.saveOrUpdate(employee);
+        //Session session = entityManager.unwrap(Session.class);
+        entityManager.merge(employee);
+        //session.saveOrUpdate(employee);
     }
     @Transactional
     @Override

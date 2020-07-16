@@ -21,6 +21,13 @@ public class Employee {
     @Column
     private LocalDate dob;
 
+
+    @Column
+    @Version
+    private long version;
+
+
+
     public Employee() {
     }
 
@@ -69,6 +76,14 @@ public class Employee {
 
     public void setDob(LocalDate dob) {
         this.dob = dob;
+    }
+
+    public long getVersion() {
+        return version;
+    }
+
+    public void setVersion(long version) {
+        this.version = version;
     }
     @Override
     public String toString() {
