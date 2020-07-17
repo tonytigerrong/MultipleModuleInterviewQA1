@@ -1,8 +1,11 @@
 package interview.hibernate.controllers;
 
+import interview.hibernate.HibernateDemoApplication;
 import interview.hibernate.daos.EmployeeDao;
 import interview.hibernate.exception.NoEmployeeException;
 import interview.hibernate.models.Employee;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.hibernate.LockMode;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -22,7 +25,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api2")
 public class EmployeeController2 {
-
+    private static final Logger LOGGER = LogManager.getLogger(EmployeeController2.class.getName());
     @Qualifier("employeeDaoImpl2")
     @Autowired
     private EmployeeDao employeeDao;
@@ -113,13 +116,21 @@ public class EmployeeController2 {
              * 1. Write or UpGrade or Pessimistic_Write : for updated or inserted, lock immediately
              * 2. Read             : for a shared lock
              * 3. Pessimistic_Force_Increment: increment version immediately
-             * 
+             *
              */
             session1.lock(e1, LockMode.UPGRADE); // lock the record of e1, others can't update the record in the meantime
             e1.setName("LockMode.UpGrade");
             session1.merge(e1);
             session1.getTransaction().commit();
 
+        }else if(method.equals("load")){
+            // Load: return a fake object with attributes are null , without hit database. extract all attributes when real use
+            // Load: return a proxy from Cache 
+            Employee employee1 = session.load(Employee.class,1);
+            // Get: return a real object with all attributes setup.
+            Employee employee2 = session.get(Employee.class,2);
+            LOGGER.info(employee1);
+            LOGGER.info(employee2);
         }
 
         return method + ": ok!";
