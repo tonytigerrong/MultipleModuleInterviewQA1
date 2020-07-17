@@ -125,12 +125,38 @@ public class EmployeeController2 {
 
         }else if(method.equals("load")){
             // Load: return a fake object with attributes are null , without hit database. extract all attributes when real use
-            // Load: return a proxy from Cache 
+            // Load: return a proxy from Cache
             Employee employee1 = session.load(Employee.class,1);
             // Get: return a real object with all attributes setup.
             Employee employee2 = session.get(Employee.class,2);
             LOGGER.info(employee1);
             LOGGER.info(employee2);
+        }else if(method.equals("refresh")){
+            Employee employee = session.get(Employee.class,2);
+            LOGGER.info(employee);
+            session.refresh(employee); // reload employee from database again, select again
+            LOGGER.info(employee);
+        }else if(method.equals("evict.merge")){
+            /**
+             * evict: detach object from session wait for long time update or user input
+             * merge: reattach object into session and hit database for update
+             */
+
+
+            SessionFactory sessionFactory = session.getSessionFactory();
+            Session session1 = sessionFactory.openSession();
+            Session session2 = sessionFactory.openSession();
+            // session 1
+            Employee em1 = session1.get(Employee.class,2);
+            session1.evict(em1);
+            // wait modify em object
+            em1.setName("evict.merge");
+            
+            // session 2
+            Transaction tx = session2.beginTransaction();
+            session2.merge(em1);
+            session2.flush();
+            tx.commit();
         }
 
         return method + ": ok!";
