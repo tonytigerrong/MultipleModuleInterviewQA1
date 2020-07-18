@@ -151,7 +151,7 @@ public class EmployeeController2 {
             session1.evict(em1);
             // wait modify em object
             em1.setName("evict.merge");
-            
+
             // session 2
             Transaction tx = session2.beginTransaction();
             session2.merge(em1);
