@@ -8,17 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="web" />
-        <module name="Model" />
+        <module name="hibernate-demo" />
         <module name="eureka-server" />
         <module name="Repos" />
         <module name="config-server" />
-        <module name="hibernate-demo" />
-        <module name="aws-sqs" />
+        <module name="client" />
+        <module name="one-plus-n" />
         <module name="api-gateway" />
         <module name="order-controller" />
         <module name="services" />
         <module name="payment-controller" />
-        <module name="client" />
+        <module name="aws-sqs" />
+        <module name="Model" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,7 +31,8 @@
       <module name="eureka-server" target="1.8" />
       <module name="hibernate-demo" target="1.8" />
       <module name="Model" target="1.8" />
-      <module name="Models" target="1.8" />
+      <module name="one-plus-n" target="1.8" />
+      <module name="oneplusn" target="1.8" />
       <module name="order-controller" target="1.8" />
       <module name="payment-controller" target="1.8" />
       <module name="Repos" target="1.8" />
@@ -44,9 +46,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Model" options="-parameters" />
-      <module name="Models" options="-parameters" />
       <module name="Repos" options="-parameters" />
-      <module name="Web-UI" options="-parameters" />
       <module name="WebSecurityConfig" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="aws-sqs" options="-parameters" />
@@ -55,6 +55,7 @@
       <module name="config-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="hibernate-demo" options="-parameters" />
+      <module name="one-plus-n" options="-parameters" />
       <module name="order-controller" options="-parameters" />
       <module name="payment-controller" options="-parameters" />
       <module name="services" options="-parameters" />

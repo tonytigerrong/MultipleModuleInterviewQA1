@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/hibernate-demo/hibernate-demo.iml" filepath="$PROJECT_DIR$/hibernate-demo/hibernate-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/one-plus-n/one-plus-n.iml" filepath="$PROJECT_DIR$/one-plus-n/one-plus-n.iml" />
       <module fileurl="file://$PROJECT_DIR$/order-controller/order-controller.iml" filepath="$PROJECT_DIR$/order-controller/order-controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/payment-controller/payment-controller.iml" filepath="$PROJECT_DIR$/payment-controller/payment-controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/payment-controller/services.iml" filepath="$PROJECT_DIR$/payment-controller/services.iml" />
